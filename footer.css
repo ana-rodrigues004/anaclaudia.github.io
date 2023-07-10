@@ -1,0 +1,104 @@
+.footer {
+  background: #000;
+}
+.footer-container {
+  position: relative;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  max-width: 1200px;
+  padding: 120px 20px 60px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+}
+.footer-contato {
+  position: relative;
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: #ccc;
+}
+.footer-contato li {
+  position: relative;
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.footer-contato li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-copy {
+  grid-column: 1 /-1;
+  font-size: 1.125rem;
+  color: #8f8f8f;
+}
+
+.footer-contato .email::before {
+  content: "";
+  display: block;
+  background: url(./img\ site/email.svg);
+  position: absolute;
+  width: 43px;
+  height: 33px;
+  left: -53px;
+  top: 10px;
+}
+.footer-contato .whatsapp::before {
+  content: "";
+  display: block;
+  background: url(./img\ site/whatsapp.svg) no-repeat center;
+  position: absolute;
+  width: 43px;
+  height: 33px;
+  left: -53px;
+}
+.footer-contato .instagram::before {
+  content: "";
+  display: block;
+  background: url(./img\ site/instagram.svg) no-repeat center;
+  position: absolute;
+  width: 43px;
+  height: 33px;
+  left: -53px;
+  top: 5px;
+}
+.footer-contato .linkedin::before {
+  content: "";
+  display: block;
+  background: url(./img\ site/linkedin.svg) no-repeat center;
+  position: absolute;
+  width: 35px;
+  height: 31px;
+  left: -50px;
+  top: 5px;
+}
+@media (max-width: 1000px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    .footer-contato li {
+      font-size: 1rem;
+      right: -40px;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-contato li {
+    font-size: 1rem;
+    right: -40px;
+  }
+}
